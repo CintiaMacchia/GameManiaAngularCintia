@@ -1,15 +1,22 @@
-import { Component } from '@angular/core';
-import Swal from 'sweetalert2';
+import { Component, OnInit } from '@angular/core';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'GameManiaAngularCintia';
+export class AppComponent  implements OnInit{
+
+  constructor() { }
+
+botao() {
+  alert('Mensagem enviada com sucesso! Logo entraremos em contato.')
+  alert("Obrigado pela visita.")
+}
+  ngOnInit(): void{
+  }
+
 }
 
 
-function teste() {
-  window.alert("Recebemos sua mensagem com sucesso, logo entraremos em contato. Obrigado pela visita!")
-}
